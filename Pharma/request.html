@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Pharma</title>
+</head>
+<body>
+  <header>
+    <div class="header_left">
+      <div class="header_logo">
+        <img src="img/linkedin_banner_image_1.png" class="logo">
+      </div>
+      <nav>
+        <ul class="nav_list">
+          <li class="nav_item"><a href="">現在庫</a></li>
+          <li class="nav_item"><a href="">スケジュール</a></li>
+          <li class="nav_item"><a href="">入出庫ログ</a></li>
+          <li class="nav_item"><a href="">出庫依頼</a></li>
+        </ul>
+      </nav>
+      <div>
+      </div>
+    </div>
+    <div class="header_right">
+      <p>ログインユーザー:<span>keigo takagi</span></p>
+      <a href="">ログアウト</a>
+    </div>
+  </header>
+
+<div class="main_wrapper">
+
+  <form action="post">
+    <div class="main_form">
+
+
+      <div class="process">
+        <div>
+          <label for="process_name">工程名を選択</label>
+        </div>
+        <div>
+
+          <input type="radio" id="sowing" name="process_name" value="1" checked>
+          <label for="sowing">細胞播種</label>
+          <input type="radio" id="first_succession" name="process_name" value="2" >
+          <label for="first_succession">第一継代</label>
+          <input type="radio" id="second_succession" name="process_name" value="3" >
+          <label for="second_succession">第二継代</label>
+          <input type="radio" id="recovery" name="process_name" value="4" >
+          <label for="recovery">回収</label>
+          <input type="radio" id="serum_preparation" name="process_name" value="5" >
+          <label for="serum_preparation">血清調製</label>
+        </div>
+      </div>
+
+        <div class="lot">
+          <div>
+            <label for="patient_lot">製造番号を入力</label>
+          </div>
+          <div>
+            <input type="text" id="patient_lot" name="patient_lot" class="patient_lot">
+          </div>
+    </div>
+  </div>
+  <div class="form_btn">
+    <input type="submit" value="出庫処理を開始" class="btn btn_blue">
+    <div>
+      <a href="index.html">出庫を中止する</a>
+    </div>
+  </div>
+
+
+
+  </form>
+</div>
+
+
+
+
+
+</body>
+</html>
